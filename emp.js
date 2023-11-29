@@ -154,14 +154,3 @@ function readWs(){
     // Log the JSON data
     console.log(data);
 }
-function readWs1(){
-    const xlsx = require("xlsx");
-    // Load the Excel file
-    const workbook = xlsx.readFile("example.xlsx");    
-    // Get the first worksheet in the workbook
-    const sheet = workbook.Sheets[workbook.SheetNames[0]];    
-    // Convert the worksheet data to a JSON object
-    const data = xlsx.utils.sheet_to_json(sheet);    
-    // Log the JSON data
-    console.log(data);
-}
