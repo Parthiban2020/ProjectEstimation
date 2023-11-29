@@ -153,4 +153,5 @@ function readWs(){
     const data = xlsx.utils.sheet_to_json(sheet);    
     // Log the JSON data
     console.log(data);
+    
 }
